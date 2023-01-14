@@ -1,0 +1,461 @@
+/*будет сделана адаптирование под следующие разрешения:
+▪ 1170 px - (наш нач.размер) та больше – PC.
+▪ 1024 px – планшеты (альбомная. ориентации);
+▪ 768 px – планшеты (портретна ориентации);
+▪ 600 px – небольшие планшеты;
+▪ 480 px – мобильные пристройства (альбомная ориентации);
+▪ 320 px – мобильные пристройства (портретна ориентации);
+*/
+
+body {
+    background: rgba(245, 245, 245, 1);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 47px auto 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container > img {
+    width: 109px;
+}
+
+
+.menu {
+    width: 534px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header a {
+    text-decoration: none;
+    color: rgba(16, 16, 16, 1);
+    font-size: 18px;
+    padding: 8px 2px;;
+}
+
+header a:hover {
+    color: blue;
+}
+
+header a:active {
+    /*padding: 8px 2px;*/
+    background: lightgrey;
+    color: blue;
+}
+
+main .wrap-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lift-wrapper {
+    width: 37.8%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+
+}
+
+main .wrap-title > img {
+    width: 57.6%;
+    z-index: -1;
+}
+
+h1 {
+    color: rgba(35, 35, 35, 1);
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    color: rgba(16, 16, 16, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 18px 0 50px;
+}
+
+.lift-wrapper > a {
+    color: rgba(165, 36, 36, 1);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 24px 39px;
+    border: 1px solid rgba(165, 36, 36, 1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-blue:hover {
+    color: blue;
+}
+
+.btn-blue:active {
+    background: lightgrey;
+    border: 1px solid blue;
+
+}
+
+.wrap-about {
+    margin: 150px auto 0;
+}
+
+
+.about {
+    color: rgba(35, 35, 35, 1);
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-card-about {
+    width: 32%;
+    position: relative;
+}
+
+.front-left-about {
+    width: 73.7%;
+    margin: 48px 0 auto auto;
+}
+
+.front-left-about > img {
+    width: 100%;
+}
+
+.user-name-h2 {
+    color: rgba(165, 36, 36, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 46px 0 60px;
+}
+
+.behind-left-about {
+    width: 91.1%;
+    height: 100%;
+    box-shadow: 0 4px 7px 3px lightgrey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.right-card-about {
+    width: 57%;
+}
+
+h3 {
+    color: rgba(165, 36, 36, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 19px 0;
+}
+
+.right-card-about p {
+    color: rgba(35, 35, 35, 1);
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 20px;
+
+}
+
+.right-card-photo {
+    width: 100%;
+    height: 52.54%;
+    position: relative;
+}
+
+.right-card-photo > img {
+    width: 95.25%;
+    margin: 31px 0;
+}
+
+.behind-right-about {
+    width: 84.15%;
+    height: 100%;
+    box-shadow: 0 4px 7px 2px lightgrey;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.wrap-portfolio {
+    margin: 140px auto 0 auto;
+}
+
+.portfolio {
+    color: rgba(35, 35, 35, 1);
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 0 47px 0;
+}
+
+.cards-portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-card-portfolio {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-card-portfolio > img {
+    width: 100%;
+}
+
+h4 {
+    color: rgba(16, 16, 16, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 19px 0 10px;
+}
+
+.inner-card-portfolio > p {
+    color: rgba(16, 16, 16, 1);
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.inner-card-portfolio > a {
+    width: 202px;
+    color: rgba(165, 36, 36, 1);
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid rgba(165, 36, 36, 1);
+    padding: 23px 0;
+    margin: 19px 0 0 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.wrap-price {
+    margin: 150px auto 0 auto;
+}
+
+.price {
+    color: rgba(35, 35, 35, 1);
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0 0 49px 0;
+}
+
+.outer-cards-prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-card-price {
+    width: 43.5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.inner-card-price > img {
+    width: 57%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+
+.inner-card-price > h4 {
+    color: rgba(165, 36, 36, 1);
+    font-size: 24px;
+    font-weight: 700;
+    margin: 23px 0 28px 0;
+    text-align: center;
+}
+
+.row-card-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 9px 40px;
+}
+
+.row-card-price > span:first-child {
+    color: rgba(35, 35, 35, 1);
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.row-card-price > span:last-child {
+    color: rgba(35, 35, 35, 1);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.row-card-price > p {
+    color: rgba(165, 36, 36, 1);
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.row-card-price > a {
+    text-decoration: none;
+    color: rgba(165, 36, 36, 1);
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid rgba(165, 36, 36, 1);
+    padding: 17px 45px 19px 45px;
+    text-align: center;
+}
+
+.row-buy {
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+
+
+.behind-card-price {
+    width: 100%;
+    height: 82%;
+    box-shadow: 0 4px 7px 2px lightgrey;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.wrap-appointment {
+    margin: 150px auto 0;
+}
+
+h5 {
+    color: rgba(35, 35, 35, 1);
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cards-appointment {
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0 100px 0;
+}
+
+.left-card-appointment {
+    width: 50.5%;
+    position: relative;
+}
+
+.right-card-appointment {
+    width: 40.8%;
+}
+
+.left-card-appointment > img:first-child {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 285px;
+}
+
+.left-card-appointment > img:last-child {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 340px;
+}
+
+
+.form-user-massage {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.form-user-massage > input, textarea {
+    margin-bottom: 40px;
+    border: 1px solid rgba(35, 35, 35, 0.35);
+    padding: 18px 20px;
+    background: rgba(245, 245, 245, 1);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-user-massage > textarea {
+    resize: none;
+    height: 184px;
+}
+
+.form-user-massage > input:last-child {
+    font-size: 24px;
+    font-weight: normal;
+    color: rgba(165, 36, 36, 1);
+    border: 1px solid rgba(165, 36, 36, 1);
+    padding: 15px 0;
+
+}
+
+
+footer {
+    border-top: 1px solid rgba(117, 117, 117, 1);
+}
+
+.wrap-footer {
+    margin: 50px auto 50px auto;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container > img {
+    width: 113px;
+}
+
+.social {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(165, 36, 36, 1);
+}
+
+.wrap-footer > a:hover {
+    color: blue;
+}
+
+.wrap-footer > a:active {
+    padding: 8px 0;
+    background: lightgrey;
+    color: blue;
+}
+
+footer a img:hover {
+    -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
+    filter: sepia(1) hue-rotate(320deg) saturate(10);
+}
+
+footer a img:active {
+    -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
+    filter: sepia(2) hue-rotate(320deg) saturate(20);
+}
